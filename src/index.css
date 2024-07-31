@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Sid: Main Layout Css  */
+
+.main-layout-wrapper {
+  background: rgb(87, 87, 87);
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.black {
+  background: #000;
+}
+
+.round {
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+.user {
+  width: 31px;
+  height: 31px;
+  border: 1px solid rgb(66, 255, 49);
+}
+
+/* Sid: Main Layout  Css Ends  */
+
+
+/* Note: Main-Body -> Cards CSS */
+.gray-round{
+background: #3c3c3c;
+border-radius: 25px;
+
+}
+
+
+
+/* Note: Main-Body -> Cards CSS */
