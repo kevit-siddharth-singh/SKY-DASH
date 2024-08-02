@@ -6,6 +6,9 @@
   --blue: #1e90ff;
   --gray: #bbb7b788;
   --green: #42ff31;
+  --gray-card: #161616;
+  --border-rad-card: 25px;
+  --border-rad-item: 15px;
 }
 
 html,
@@ -14,6 +17,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: Poppins;
 }
 * {
   box-sizing: border-box;
@@ -26,7 +30,7 @@ body {
 /* Sid: Main Layout Css  */
 
 .main-layout-wrapper {
-  background: rgb(87, 87, 87);
+  background: rgb(50, 49, 49);
   width: 100%;
   height: 100%;
   color: white;
@@ -38,12 +42,12 @@ body {
 
 .round {
   border-radius: 50%;
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
 
 .user {
-  width: 31px;
-  height: 31px;
+  width: 2.5rem;
+  height: 2.5rem;
   border: 1px solid #42ff31;
 }
 
@@ -73,22 +77,25 @@ body {
 .line {
   padding: 0.1rem 0.5rem;
   color: var(--green);
-
-  /* border: 1px solid var(--green); */
 }
 
 .mic {
   padding: 0.4rem;
   background: #ff3c00;
+  outline: 10px solid var(--gray); /* Initial outline color and transparency */
+  box-shadow: 0px 0px 15px 5px rgba(255, 60, 0, 0.47);
   border-radius: 50%;
   border: 2px solid transparent;
-  outline: 10px solid var(--gray); /* Initial outline color and transparency */
-  outline-offset: 0px; /* To merge the outline and border */
+  outline-offset: -1px; /* To merge the outline and border */
   transition: ease-in-out;
   animation: pulse 2s infinite;
 }
+.mic:hover {
+  box-shadow: 0px 0px 15px 5px rgba(0, 255, 51, 0.47);
+}
+
 .logout {
-  color: var(--green);
+  color: white;
 }
 
 .logout:hover {
@@ -123,8 +130,33 @@ body {
 
 /* Note: Main-Body -> Cards CSS */
 .gray-round {
-  background: #3c3c3c;
-  border-radius: 25px;
+  background: var(--gray-card);
+  border-radius: var(--border-rad-card);
 }
+
+/* ! Cards Component Css Starts Here */
+.play-btn{
+  padding: 1.5rem;
+  border-radius: 50%;
+  background: orangered;
+  box-shadow: 0px 0px 100px 15px rgb(255, 60, 0);
+}
+
+
+.timer p {
+  padding: 0.1rem;
+}
+.timer-text {
+  padding: 0.2rem 2rem;
+  background: rgba(65, 65, 65, 0.496);
+  border-radius: var(--border-rad-item);
+  color: white;
+}
+
+.sub-text {
+  color: var(--gray);
+}
+
+/* ! Cards Component Css Ends Here */
 
 /* Note: Main-Body -> Cards CSS */

@@ -63,7 +63,7 @@ const SideBar = () => {
             <MdHeadsetMic size={ICON_SIZE} />
           </div>
           <div className="line">
-            <BsDashLg size={ICON_SIZE} />
+            <BsDashLg size={30} />
           </div>
           <div className="sub-icons logout">
             <LuLogOut size={ICON_SIZE} />
