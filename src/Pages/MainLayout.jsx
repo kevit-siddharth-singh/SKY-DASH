@@ -4,11 +4,15 @@ import { IoIosNotifications } from "react-icons/io";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import user from "../assets/siddharth.jpeg";
 import Body from "../components/Body";
+import SideBar from "../components/SideBar";
 
 const MainLayout = ({ isDarkMode, toggleDarkMode }) => {
   return (
     <div className="main-layout-wrapper flex gap-[1px] h-[100%] w-[100%] ">
-      <div className="sidebar  black ">Side Bar </div>
+      {/* Note: SideBar -- Component  */}
+      <SideBar />
+      {/* Note: SideBar -- Component  */}
+
       <div className="main-page w-[100%] ">
         <div className="navbar black py-[1rem] px-[1rem] flex items-center justify-between ">
           <div className="title">

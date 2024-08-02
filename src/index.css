@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --blue: #1e90ff;
+  --gray: #bbb7b788;
+  --green: #42ff31;
+}
+
 html,
 body {
   height: 100%;
@@ -38,19 +44,87 @@ body {
 .user {
   width: 31px;
   height: 31px;
-  border: 1px solid rgb(66, 255, 49);
+  border: 1px solid #42ff31;
 }
+
+/* ! Side Bar Css Starts Here */
+.logo {
+  color: #42ff31;
+  padding: 0.5rem;
+}
+.logo:hover {
+  color: red;
+  cursor: pointer;
+}
+.sub-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem;
+  background: transparent;
+  border-radius: 15px;
+}
+.sub-icons:hover {
+  color: var(--green);
+  cursor: pointer;
+  background: #15ff004a;
+  /* border: 1px solid var(--green); */
+}
+.line {
+  padding: 0.1rem 0.5rem;
+  color: var(--green);
+
+  /* border: 1px solid var(--green); */
+}
+
+.mic {
+  padding: 0.4rem;
+  background: #ff3c00;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  outline: 10px solid var(--gray); /* Initial outline color and transparency */
+  outline-offset: 0px; /* To merge the outline and border */
+  transition: ease-in-out;
+  animation: pulse 2s infinite;
+}
+.logout {
+  color: var(--green);
+}
+
+.logout:hover {
+  color: #ff1717;
+  background: transparent;
+}
+@keyframes pulse {
+  0% {
+    outline-color: var(--gray);
+    outline-width: 0px;
+  }
+  25% {
+    outline-color: var(--gray);
+    outline-width: 5px;
+  }
+  50% {
+    outline-color: var(--gray);
+    outline-width: 12px;
+  }
+  75% {
+    outline-color: var(--gray);
+    outline-width: 5px;
+  }
+  100% {
+    outline-color: var(--gray);
+    outline-width: 0px;
+  }
+}
+/* ! Side Bar Css Ends Here */
 
 /* Sid: Main Layout  Css Ends  */
 
-
 /* Note: Main-Body -> Cards CSS */
-.gray-round{
-background: #3c3c3c;
-border-radius: 25px;
-
+.gray-round {
+  background: #3c3c3c;
+  border-radius: 25px;
 }
-
-
 
 /* Note: Main-Body -> Cards CSS */

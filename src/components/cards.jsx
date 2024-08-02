@@ -16,7 +16,7 @@ const cards = () => {
                 <p>Filter</p>
             </div>
         </div>
-        <div className="footer-data-2">
+        <div className="footer-data-2 flex">
             <p className="Today">Today</p>
             <p className="Week">Week</p>
             <p className="Month">Month</p>
