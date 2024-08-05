@@ -2,6 +2,7 @@ import React from "react";
 
 // Sid: Importing Icons
 import { IoMdPause } from "react-icons/io";
+import { MdNavigateNext } from "react-icons/md";
 // Sid: Importing Icons
 
 // !Global Icons Size
@@ -44,7 +45,26 @@ const cards = () => {
             </div>
           </div>
         </div>
-        <div className="card2 w-full gray-round">hey</div>
+        <div className="card2 w-full gray-round">
+          <div className="heading flex  justify-between  items-center">
+            <p className="task-text">Today's tasks</p>
+            <div className="manage-wrapper flex items-center">
+              <p className="manage-text">Manage</p>
+              <MdNavigateNext size={20} />
+            </div>
+          </div>
+          <div className="tasks flex  justify-center items-center"> 
+            <div className="task flex justify-around items-center w-full">
+              <div className="pause  flex  justify-center items-center">
+              <IoMdPause size={15} />
+              </div>
+              <div className="content">
+                <p className="content-title">Color Palette Selection</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
         <div className="card3 w-full gray-round">hey</div>
       </div>
 
