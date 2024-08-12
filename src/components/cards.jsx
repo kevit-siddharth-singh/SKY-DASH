@@ -54,8 +54,8 @@ const cards = () => {
           >
             <p className="task-text">Today's tasks</p>
             <div className="manage-wrapper flex items-center">
-              <p className="manage-text">Manage</p>
-              <MdNavigateNext size={20} />
+              <p className="manage-text text-[#3859ed]">Manage</p>
+              <MdNavigateNext size={20} fill="#3859ed"/>
             </div>
           </div>
           <div className="tasks flex  justify-center items-center  p-3 rounded-xl mx-2 border border-[#ff3c006c] bg-[#3231313e]">
